@@ -90,7 +90,7 @@ public class AddClientForm extends JFrame {
 					String num = fieldNum.getText();
 					int n = JOptionPane.showConfirmDialog(null, "Add '"+name+"' to Clients database ?","Confirmation",JOptionPane.YES_NO_OPTION);
 					if(n==JOptionPane.YES_OPTION)
-						MainForm.connectionData.addClient(name, email, num);
+						MainForm.dbconnect.addClient(name, email, num);
 				}
 			}
 		});
